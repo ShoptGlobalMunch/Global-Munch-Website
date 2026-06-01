@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Munch — Snacks from Around the World</title>
+    <meta name="description" content="Discover exotic, imported, and hard-to-find snacks from around the globe. Global Munch ships rare snacks straight to your door.">
+
+    <!-- Open Graph (social sharing previews) -->
+    <meta property="og:title" content="Global Munch — Snacks from Around the World">
+    <meta property="og:description" content="Rare, imported, and hyped snacks you can't find locally. Shop Global Munch.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAV ========== -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/logo.png" alt="Global Munch" class="nav-logo-img">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#findus">Find Us</a></li>
+                <li><a href="#shop" class="nav-cta">Shop Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="Global Munch" class="hero-logo">
+            <h1 class="hero-headline">Snacks You Can't Find<br>Around the Corner</h1>
+            <p class="hero-sub">Rare, imported, and hyped snacks from around the world — delivered straight to you.</p>
+            <div class="hero-ctas">
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+                <a href="https://www.whatnot.com/user/globalmunch" class="btn btn-secondary" target="_blank" rel="noopener">Live on Whatnot</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <i class="ri-arrow-down-line"></i>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-badge">The Story</div>
+                <h2>You've Seen Them Online.<br>Now You Can Taste Them.</h2>
+                <p>You've seen them on TikTok. You've heard people talk about them. But your local store just doesn't carry them.</p>
+                <p>That's exactly why <strong>Global Munch</strong> exists — to get rare, imported, and hyped snacks from around the world into your hands. From Korean honey butter chips to Japanese sweets to Mexican candy, if people are obsessed with it, we've got it.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="ri-global-line feature-icon"></i>
+                        <div class="feature-text">
+                            <strong>Worldwide Sourcing</strong>
+                            <span>Snacks from every corner of the globe</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="ri-refresh-line feature-icon"></i>
+                        <div class="feature-text">
+                            <strong>New Drops Weekly</strong>
+                            <span>Fresh inventory added regularly</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="ri-live-line feature-icon"></i>
+                        <div class="feature-text">
+                            <strong>Live on Whatnot</strong>
+                            <span>Join our live selling events</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="products" id="snacks">
+        <div class="container">
+            <h2>What's In The Stash</h2>
+            <p class="section-sub">Real imports. Rare flavors. If you've seen it on TikTok, we probably have it.</p>
+
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="chips">Chips</button>
+                <button class="filter-btn" data-filter="gummies">Gummies</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+                <button class="filter-btn" data-filter="candy">Candy</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-wasabi-pro.jpg" alt="Lay's Wasabi China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-wasabi-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Wasabi</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-seaweed-pro.jpg" alt="Lay's Seaweed China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-seaweed-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Seaweed</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-purple-mystery-pro.jpg" alt="Lay's Purple Mystery China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-purple-mystery-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Purple Mystery</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-hot-pot-pro.jpg" alt="Lay's Numb & Spicy Hot Pot China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-hot-pot-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Numb & Spicy Hot Pot</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-spicy-strip-pro.jpg" alt="Lay's Spicy Strip China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-spicy-strip-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Spicy Strip</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-kimchi-pro.jpg" alt="Lay's Korean Kimchi China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-kimchi-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Korean Kimchi</p></div>
+                </div>
+                <div class="product-card has-video" data-category="gummies">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/trolli-sour-worms-pro.jpg" alt="Trolli Sour Worms China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/trolli-sour-worms-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-gummies">Gummies</span><p class="product-name">Trolli Sour Worms</p></div>
+                </div>
+                <div class="product-card has-video" data-category="gummies">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/trolli-grape-pro.jpg" alt="Trolli Grape Gummies China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/trolli-grape-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-gummies">Gummies</span><p class="product-name">Trolli Grape Gummies</p></div>
+                </div>
+                <div class="product-card has-video" data-category="gummies">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/trolli-butterfly-pro.jpg" alt="Trolli Butterfly Gummies China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/trolli-butterfly-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-gummies">Gummies</span><p class="product-name">Trolli Butterfly Gummies</p></div>
+                </div>
+                <div class="product-card has-video" data-category="gummies">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/trolli-watermelon-pro.jpg" alt="Trolli Watermelon Gummies China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/trolli-watermelon-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-gummies">Gummies</span><p class="product-name">Trolli Watermelon Gummies</p></div>
+                </div>
+                <div class="product-card has-video" data-category="gummies">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/trolli-twist-pro.jpg" alt="Trolli Twist Worms China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/trolli-twist-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-gummies">Gummies</span><p class="product-name">Trolli Twist Worms</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/fanta-lemon-pro.jpg" alt="Fanta Lemon China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/fanta-lemon-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Fanta Lemon</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/monster-ultra-pro.jpg" alt="Monster Ultra China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/monster-ultra-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Monster Ultra China</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/redbull-china-pro.jpg" alt="Red Bull China Extra">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/redbull-china-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Red Bull China Extra</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/skittles-panda-pro.jpg" alt="Skittles Panda China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/skittles-panda-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Skittles Panda</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-stax-lime-pro.jpg" alt="Lay's Stax Lime">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-stax-lime-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇺🇸 USA</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Stax Lime</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-lime-pro.jpg" alt="Lay's Lime Mexico">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-lime-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇲🇽 Mexico</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Lime</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/lays-italian-red-meat-pro.jpg" alt="Lay's Italian Red Meat">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/lays-italian-red-meat-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇮🇹 Italy</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Lay's Italian Red Meat</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pringles-seaweed-pro.jpg" alt="Pringles Seaweed">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pringles-seaweed-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🌏 Asia</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Pringles Seaweed</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pringles-spicy-sichuan-pro.jpg" alt="Pringles Spicy Sichuan China">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pringles-spicy-sichuan-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Pringles Spicy Sichuan</p></div>
+                </div>
+                <div class="product-card has-video" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pringles-spicy-lemon-pro.jpg" alt="Pringles Spicy Lemon">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pringles-spicy-lemon-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🌏 Asia</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Pringles Spicy Lemon</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/monster-pipeline-punch-pro.jpg" alt="Monster Pipeline Punch">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/monster-pipeline-punch-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇺🇸 USA</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Monster Pipeline Punch</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/monster-ultra-paradise-pro.jpg" alt="Monster Ultra Paradise">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/monster-ultra-paradise-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇺🇸 USA</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Monster Ultra Paradise</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/ramune-melon-pro.jpg" alt="Ramune Melon Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/ramune-melon-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Ramune Melon</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/ramune-orange-pro.jpg" alt="Ramune Orange Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/ramune-orange-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Ramune Orange</p></div>
+                </div>
+                <div class="product-card has-video" data-category="drinks">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/redbull-kratingdaeng-pro.jpg" alt="Red Bull Krating Daeng Thailand">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/redbull-kratingdaeng-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇹🇭 Thailand</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-drinks">Drinks</span><p class="product-name">Red Bull Krating Daeng</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/bonumii-sour-strawberry-pro.jpg" alt="Bonumii Sour Strawberry Korea">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/bonumii-sour-strawberry-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇰🇷 Korea</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Bonumii Sour Strawberry</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/bonumii-sour-grape-pro.jpg" alt="Bonumii Sour Grape Korea">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/bonumii-sour-grape-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇰🇷 Korea</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Bonumii Sour Grape</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pocky-milk-pro.jpg" alt="Pocky Milk Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pocky-milk-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Pocky Milk</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pocky-strawberry-pro.jpg" alt="Pocky Strawberry Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pocky-strawberry-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Pocky Strawberry</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pocky-matcha-pro.jpg" alt="Pocky Matcha Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pocky-matcha-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Pocky Matcha</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pocky-chocolate-pro.jpg" alt="Pocky Chocolate Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pocky-chocolate-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Pocky Chocolate</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/pocky-banana-pro.jpg" alt="Pocky Banana Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/pocky-banana-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Pocky Banana</p></div>
+                </div>
+                <div class="product-card has-video" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/matcha-mochi-pro.jpg" alt="Matcha Mochi Japan">
+                        <video class="product-video" muted loop playsinline preload="none">
+                            <source src="assets/products/matcha-mochi-reveal.mp4" type="video/mp4">
+                        </video>
+                        <span class="product-origin">🇯🇵 Japan</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Matcha Mochi</p></div>
+                </div>
+                <div class="product-card" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/bonumii-sour-peach-pro.jpg" alt="Bonumii Sour Peach Korea">
+                        <span class="product-origin">🇰🇷 Korea</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Bonumii Sour Peach</p></div>
+                </div>
+                <div class="product-card" data-category="candy">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/oreo-mini-cup-pro.jpg" alt="Oreo Mini Cup China">
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-candy">Candy</span><p class="product-name">Oreo Mini Cup</p></div>
+                </div>
+                <div class="product-card" data-category="chips">
+                    <div class="product-img-wrap">
+                        <img src="assets/products/cheetos-ultraman-beef-pro.jpg" alt="Cheetos Ultraman Beef China">
+                        <span class="product-origin">🇨🇳 China</span>
+                    </div>
+                    <div class="product-info"><span class="product-tag tag-chips">Chips</span><p class="product-name">Cheetos Ultraman Beef</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SHOP ========== -->
+    <section class="shop" id="shop">
+        <div class="container">
+            <h2>Browse the Collection</h2>
+            <p class="section-sub">New drops, rare finds, and trending snacks — updated regularly.</p>
+
+            <!-- SQUARE STORE EMBED — replace this comment block with your Square embed code -->
+            <!-- To get embed code: Square Dashboard > Online > Website > Embed -->
+            <div class="square-placeholder" id="square-store">
+                <div class="square-placeholder-inner">
+                    <i class="ri-store-2-line placeholder-icon"></i>
+                    <p class="placeholder-title">Shop Coming Soon</p>
+                    <p class="placeholder-note">Online store launching shortly. In the meantime, shop our full collection live on Whatnot.</p>
+                    <a href="https://www.whatnot.com/user/globalmunch" class="btn btn-primary" target="_blank" rel="noopener">Shop on Whatnot</a>
+                </div>
+            </div>
+            <!-- END SQUARE EMBED -->
+
+        </div>
+    </section>
+
+    <!-- ========== FIND US ========== -->
+    <section class="findus" id="findus">
+        <div class="container">
+            <h2>Find Us Everywhere</h2>
+            <p class="section-sub">Follow along for new drops, restocks, and snack content.</p>
+            <div class="platform-grid">
+                <a href="https://www.instagram.com/globalmunchfl" target="_blank" rel="noopener" class="platform-card instagram">
+                    <i class="ri-instagram-line platform-icon"></i>
+                    <div class="platform-name">Instagram</div>
+                    <div class="platform-handle">@globalmunchfl</div>
+                </a>
+                <a href="https://www.tiktok.com/@globalmunch_shop" target="_blank" rel="noopener" class="platform-card tiktok">
+                    <i class="ri-tiktok-line platform-icon"></i>
+                    <div class="platform-name">TikTok</div>
+                    <div class="platform-handle">@globalmunch_shop</div>
+                </a>
+                <a href="https://www.youtube.com/@SHOPGLOBALMUNCH" target="_blank" rel="noopener" class="platform-card youtube">
+                    <i class="ri-youtube-line platform-icon"></i>
+                    <div class="platform-name">YouTube</div>
+                    <div class="platform-handle">Global Munch</div>
+                </a>
+                <a href="https://www.whatnot.com/user/globalmunch" target="_blank" rel="noopener" class="platform-card whatnot">
+                    <i class="ri-live-line platform-icon"></i>
+                    <div class="platform-name">Whatnot</div>
+                    <div class="platform-handle">Live Drops</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <img src="assets/logo.png" alt="Global Munch" class="footer-logo">
+            <p class="footer-tagline">Snacks from Around the World</p>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/globalmunchfl" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.tiktok.com/@globalmunch_shop" target="_blank" rel="noopener">TikTok</a>
+                <a href="https://www.youtube.com/@SHOPGLOBALMUNCH" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.whatnot.com/user/globalmunch" target="_blank" rel="noopener">Whatnot</a>
+            </div>
+            <p class="footer-copy">© 2026 Global Munch. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
